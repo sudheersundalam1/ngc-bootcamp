@@ -47,6 +47,7 @@ async function loadFonts() {
  * @param {Element} main The container element
  */
 function buildAutoBlocks(main) {
+  if (main.querySelector('.hero')) return;
   try {
     buildHeroBlock(main);
   } catch (error) {
